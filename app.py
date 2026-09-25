@@ -10,7 +10,7 @@ def register():
 		student_id = request.form.get("student_id", "").strip()
 
 		if name == email == student_id:
-			return render_template("successful.htm")
+			return render_template("success.html")
 
 	return render_template("registration.html")
 
